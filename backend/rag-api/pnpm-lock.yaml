@@ -14,9 +14,6 @@ importers:
       '@supabase/supabase-js':
         specifier: ^2.106.1
         version: 2.106.1
-      '@types/pg':
-        specifier: ^8.20.0
-        version: 8.20.0
       cors:
         specifier: ^2.8.6
         version: 2.8.6
@@ -39,6 +36,9 @@ importers:
       '@types/node':
         specifier: ^25.9.1
         version: 25.9.1
+      '@types/pg':
+        specifier: ^8.20.0
+        version: 8.20.0
       tsx:
         specifier: ^4.22.3
         version: 4.22.3
