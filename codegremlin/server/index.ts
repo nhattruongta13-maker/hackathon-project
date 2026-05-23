@@ -34,7 +34,7 @@ app.post('/api/roast', async (req, res) => {
     const ollamaRes = await ollama.chat({
       model: 'llama3.1:8b',
       messages: [
-        { role: 'system', content: 'You are CodeGremlin, a brutal code roaster. 1 sentence only. Be funny. Be mean. Max 20 words.' },
+        { role: 'system', content: 'You are CodeGremlin, a brutal code roaster. 1 sentence only. Be funny. Be mean. And also help them fix their code.' },
         { role: 'user', content: `Roast this: ${code}` }
       ],
       options: { num_predict: 60, temperature: 0.9 }
