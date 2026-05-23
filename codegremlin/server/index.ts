@@ -37,7 +37,7 @@ app.post('/api/roast', async (req, res) => {
         { role: 'system', content: 'You are CodeGremlin, a brutal code roaster. 1 sentence only. Be funny. Be mean. And also help them fix their code.' },
         { role: 'user', content: `Roast this: ${code}` }
       ],
-      options: { num_predict: 60, temperature: 0.9 }
+      options: { num_predict: 200, temperature: 0.9 }
     })
     const roast = ollamaRes.message.content // FIX 1: Extract string
     
